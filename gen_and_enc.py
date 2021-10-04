@@ -43,7 +43,7 @@ def prm_finder():
         if test_num % i == 0:
             return prm_finder()
             
-        return test_num
+    return test_num
     
 def line_maker():
     line = "+"+"-"*70+"+"
@@ -63,13 +63,16 @@ def en_cryptor(e,n,encode_array):
         decode_array.append(crptd_value)
     line_maker()
     line_maker()
-    print("[>]Decrypted (ascii_code):")    
+    print("[>]Encrypted (ascii_code):")    
     print(decode_array)
     
     text_line = "".join(chr(i) for i in decode_array)
     print(f"-----> {text_line}")
     
     line_maker()
+    
+    
+    
                 
     
 if __name__ == "__main__":
@@ -115,4 +118,4 @@ if __name__ == "__main__":
     
     en_cryptor(e,n,encode_array)
     
-
+ 
